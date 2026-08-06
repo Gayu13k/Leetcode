@@ -1,6 +1,5 @@
 class Solution {
     public int mirrorDistance(int n) {
-        int dis=0;
         int original=n;
         int rev=0;
         while(n!=0){
