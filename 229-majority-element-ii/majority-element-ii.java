@@ -6,9 +6,14 @@ class Solution {
         for(int i :nums){
             map.put(i,map.getOrDefault(i,0)+1);
         }
-        for(Map.Entry<Integer, Integer> entry:map.entrySet()){
+        /*for(Map.Entry<Integer, Integer> entry:map.entrySet()){
             if(entry.getValue()>(n/3)){
                 list.add(entry.getKey());
+            }
+        }*/
+        for(int num:map.keySet()){
+            if(map.get(num)>(n/3)){
+                list.add(num);
             }
         }
         return list;
